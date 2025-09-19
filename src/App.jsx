@@ -1,24 +1,35 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects.jsx";
-import Articles from "./pages/Articles";
-import Contact from "./pages/Contact";
-import Layout from "./components/Layout.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Port from "./components/Port.jsx";
 
 const App = () => {
   return (
-    <Routes>
-      <Route element={<Layout/>}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/articles" element={<Articles />} />
-        <Route path="/contact" element={<Contact />} />
-      </Route>
+    // <Routes>
+    //   <Route element={<Layout/>}>
+    //     <Route path="/" element={<Home />} />
+    //     <Route path="/about" element={<About />} />
+    //     <Route path="/projects" element={<Projects />} />
+    //     <Route path="/articles" element={<Articles />} />
+    //     <Route path="/contact" element={<Contact />} />
+    //   </Route>
       
-    </Routes>
+    // </Routes>
+
+
+    
+
+    // <div className="bg-black flex justify-center h-screen">
+    //   <div className='bg-[#000001]  text-white  w-[80%] h-full border-2 border-amber-600'>
+    //     <Navbar/>
+    //     {/* <Portfolio/> */}
+    //     <Port/>
+    //   </div>
+    // </div>
+    <div>
+      <Port/>
+    </div>
+
   );
 };
 

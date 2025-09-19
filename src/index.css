@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @import "tailwindcss";
+
+
 /* Optional: Hide scrollbar if needed */
 ::-webkit-scrollbar {
   display: none;
@@ -6,4 +10,85 @@
 
 * {
   font-family: 'Inter', sans-serif;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-color: #0a0a0a; /* dark background */
+
+
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-color: #0a0a0a; /* dark background */
+
+  .shadow-overlay {
+  position: relative;
+  background: url("your-image.jpg") center/cover no-repeat; /* example */
+  color: white;
+}
+
+.shadow-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.9) 100%);
+}
+
+}
+
+
+
+.title, .title2{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 180px;
+}
+
+
+.title2{
+  text-align: right;
+}
+
+.tagline{
+  font-family: sans-serif;
+}
+.name{
+  /* font-family:'Times New Roman', Times, serif; */
+    font-family: "Fira code", sans-serif;
+
+
+  font-size: 3rem;
+  font-weight: 600;
+  /* background: linear-gradient(to bottom, #ffffff, #d0cfcf, #171717);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+
+.latest{
+    font-family: "Open Sans", sans-serif;
+
+  font-weight: 600;
+}
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
 }
