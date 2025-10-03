@@ -276,125 +276,6 @@ const textRef3 = useRef(null);
         <Skills />
 
         {/* projects section */}
-
-        {/* <div className=" projects-section flex mt-[100px]">
-          <div className="w-[50%]  h-full flex flex-col items-center">
-            <div className=" text-[100px] leading-none latest">
-              Latest projects
-            </div>
-
-           
-            <div
-              onClick={() => setOpen(true)}
-              className="border border-gray-600 h-[450px] w-[400px] p-4 rounded-2xl mt-[150px] cursor-pointer hover:shadow-lg hover:border-gray-400 transition group"
-            >
-              <div className="h-[230px] w-full rounded-2xl overflow-hidden">
-                <img src={img} className="w-full h-full object-cover " />
-              </div>
-
-              <div className="flex mt-3">
-                <div className="text-3xl font-bold">peerShape</div>
-                <div className="linkedin-icon ml-2"></div>
-              </div>
-
-              <div className="project-description mt-2 text-gray-400 text-lg">
-                a project driven saas platform built for aspiring developers to
-                build, perform, showcase, win and increase chances to get hired
-              </div>
-            </div>
-
-            {open && (
-              <div className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center">
-                <div className="bg-[#18181B] rounded-2xl mt-[30px] mx-[100px] p-6 w-[1000px] h-[1000px] overflow-y-scroll shadow-lg relative">
-                  
-                  <button
-                    onClick={() => setOpen(false)}
-                    className="absolute top-4 right-4 text-white hover:text-green cursor-pointer border-1 p-2 rounded-xl"
-                  >
-                    go back
-                  </button>
-
-                  
-                  <h2 className="text-2xl font-bold mb-4">peerShape</h2>
-                  <img
-                    src={pro1}
-                    className="w-full h-[550px] object-cover rounded-lg mb-4"
-                  />
-                  <h3 className="text-3xl font-bold mt-8">
-                    About this project
-                  </h3>
-                  <p className="text-white text-lg mb-4 mt-4">
-                    peerShape is a commnity based learning plartform for those
-                    who build stuff, and make impact on, here u build the
-                    projects u showcase them in public, make them for real
-                    problems and test them real time usecase u submit them on
-                    plartfom. The consistency makes the user enter in elite club
-                    by earning coins The user can help others in community share
-                    new tech updates and get himself envolved with every
-                    activity and he build more and more.........
-                  </p>
-
-                  <div className="text-3xl font-bold mt-8">Tech Stack</div>
-                  <div className="flex gap-4">
-                    <div className="p-2 bg-gray-400 rounded-lg">
-                      <SiReact className="text-blue-800 text-2xl group" />
-                      <div className="hidden group:hover:visible">React</div>
-                    </div>
-                  </div>
-
-                  
-                  <div className="space-y-4">
-                    {Array.from({ length: 20 }).map((_, i) => (
-                      <p key={i} className="text-gray-600">
-                        Scroll content line {i + 1} — this will show scrolling
-                        inside the overlay only.
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className="w-[50%]  h-full  flex flex-col items-center gap-[100px]">
-           
-
-            <div className="border-1 border-gray-600 h-[450px] w-[400px] p-4 rounded-2xl">
-              <div className="h-[230px] w-full rounded-2xl overflow-hidden">
-                <img src={img1} className="w-full h-full object-cover" />
-              </div>
-
-              <div className="flex mt-3">
-                <div className="text-3xl font-bold">peerShape</div>
-                <div className="linkedin-icon"></div>
-              </div>
-
-              <div className="project-description mt-2 text-gray-400 text-lg ">
-                a project driven saas plartform build for aspering developers to
-                build, win, perform and increse chances to get hired{" "}
-              </div>
-            </div>
-
-          
-
-            <div className="border-1 border-gray-600 h-[450px] w-[400px] p-4 rounded-2xl">
-              <div className="h-[230px] w-full rounded-2xl overflow-hidden">
-                <img src={img2} className="w-full h-full object-cover" />
-              </div>
-
-              <div className="flex mt-3">
-                <div className="text-3xl font-bold">flipcoin</div>
-                <div className="linkedin-icon"></div>
-              </div>
-
-              <div className="project-description mt-2 text-gray-400 text-lg ">
-                a project driven saas plartform build for aspering developers to
-                build, win, perform and increse chances to get hired{" "}
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div
           ref={projectsRef}
           className=" projects-section flex flex-col lg:flex-row mt-[100px] gap-10"
@@ -413,8 +294,9 @@ const textRef3 = useRef(null);
               ref={project01}
               
               className="border border-[#4a4a4a] w-full sm:w-[400px] p-4
-              px-1 rounded-2xl mt-10 sm:mt-[150px] xl:mt-[250px] hover:shadow-lg transition group self-center"
+              px-1 rounded-2xl mt-10 sm:mt-[150px] xl:mt-[250px] hover:shadow-lg transition group self-center relative"
             >
+              <div className="absolute top-0 right-0 border-1 px-2 rounded-sm">in progress</div>
               <div
               onClick={() => setSelectedProject("peerShape")}
                className="h-[200px] sm:h-[230px] w-full rounded-2xl overflow-hidden hover:scale-99 transition duration-300 cursor-pointer">
@@ -435,7 +317,7 @@ const textRef3 = useRef(null);
                 </div>
               </div>
 
-              <div className="project-description mt-2 text-[#c1bfbf] text-sm sm:text-base md:text-md">
+              <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm sm:text-base md:text-md">
                 Project-driven SaaS for aspiring developers to build, showcase, and collaborate. Features profile creation, team discovery, and project showcase. Built with React, Tailwind CSS, Node.js. Deployed on Vercel.
 
                 
@@ -625,6 +507,7 @@ const textRef3 = useRef(null);
 
         {/* about  */}
         <section className="py-16 bg-transparent mt-[100px] relative overflow-hidden">
+
           {/* Heading */}
           <div ref={textRef2}>
             <h2 className="text-5xl sm:text-6xl md:text-[100px] font-bold text-[#121212] dark:text-[#ffffff] leading-none latest md:text-left">
@@ -640,20 +523,12 @@ const textRef3 = useRef(null);
             ref={textRef3}
             className="text-base sm:text-lg md:text-xl text-[#3d3d3d] dark:text-[#ffffff] flex flex-col gap-2 mt-6 sm:mt-[40px] md:mt-[80px] px-4 sm:px-10 md:pl-[400px] text-left"
           >
-            <p>
-              ○ I bring a unique blend of technical expertise, creativity, and
-              problem-solving mindset.
-            </p>
-            <p>○ I put my pure efforts instead of creating buzz</p>
-            <p>
-              ○ Continuously working on many projects from last few months to
-              sharpen my skills
-            </p>
-            <p>
-              ○ Maintaining DSA streak not to flex but to make deep
-              understanding about algorithm
-            </p>
-            <p>○ Trying to be a good solver on every step I'm improving </p>
+            <p>○ I bring a strong mix of technical expertise, creativity, and a problem-solving mindset.</p>
+            <p>○ I believe in putting genuine effort into my work rather than just creating noise.</p>
+            <p>○ I have been consistently working on multiple projects over the past few months to sharpen my skills.</p>
+            <p>○ I maintain a DSA streak not for show, but to build a deeper understanding of algorithms.</p>
+            <p>○ I strive to become a better problem-solver with every step of improvement I take.</p>
+
           </div>
 
           {/* Carousel Container */}
@@ -737,7 +612,7 @@ const textRef3 = useRef(null);
         </section>
 
         {/*profile image section*/}
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center mt-10 mb-[100px]">
           <img
             src={portfolioImg}
             alt="portfolio image"
@@ -746,14 +621,14 @@ const textRef3 = useRef(null);
         </div>
 
         {/* rate portfolio section*/}
-        <div className="flex flex-col md:flex-row justify-between gap-20 mt-[150px] px-4 sm:px-6 md:px-10">
-          {/* LEFT SIDE - Rate Section */}
+        {/* <div className="flex flex-col md:flex-row justify-between gap-20 mt-[150px] px-4 sm:px-6 md:px-10">
+          
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 latest">
               Rate this portfolio...
             </h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-              {/* Rating Input */}
+              
               <div className="flex gap-3 sm:gap-6 mt-8 flex-wrap">
                 {[1, 2, 3, 4, 5].map((num) => (
                   <div key={num} className="relative group">
@@ -775,7 +650,7 @@ const textRef3 = useRef(null);
                 ))}
               </div>
 
-              {/* Message */}
+              
               <textarea
                 placeholder="Your feedback..."
                 value={message}
@@ -784,7 +659,7 @@ const textRef3 = useRef(null);
                 className="p-3 rounded-lg bg-transparent border border-gray-400 text-white focus:outline-none focus:border-blue-500 text-sm sm:text-base"
               />
 
-              {/* Submit */}
+              
               <div className="text-center md:text-right">
                 <button
                   type="submit"
@@ -796,7 +671,7 @@ const textRef3 = useRef(null);
             </form>
           </div>
 
-          {/* RIGHT SIDE - Infinite Carousel */}
+          
           <div className="w-full md:w-1/2 relative overflow-hidden h-[300px] sm:h-[350px] md:h-[400px] mt-10 md:mt-0">
             <div className="absolute top-0 left-0 w-full h-16 sm:h-20 bg-gradient-to-b from-[#0a0a0a] to-transparent z-10"></div>
             <div className="absolute bottom-0 left-0 w-full h-16 sm:h-20 bg-gradient-to-t from-[#0a0a0a] to-transparent z-10"></div>
@@ -824,16 +699,16 @@ const textRef3 = useRef(null);
             </div>
           </div>
 
-          {/* Custom animation */}
+          
           <style>
             {`
-      @keyframes moveUp {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-50%); }
-      }
-    `}
+              @keyframes moveUp {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(-50%); }
+              }
+            `}
           </style>
-        </div>
+        </div> */}
 
         {/* contect section  */}
         <div className="mt-[150px] mb-[100px] px-4 sm:px-6 md:px-10">

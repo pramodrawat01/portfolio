@@ -97,6 +97,38 @@ const Skills = () => {
     });
   }, []);
 
+  const textRef2 = useRef(null);
+  useEffect(() => {
+    gsap.from(textRef2.current, {
+      y: 50,          // start 50px below
+      opacity: 0,     // start invisible
+      duration: 1,    // animation duration
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: textRef2.current, // animate when this element is in view
+        start: "top 80%",         // trigger when top hits 80% of viewport
+        toggleActions: "play none none none",
+      },
+    });
+  }, []);
+
+  const textRef3= useRef(null);
+  useEffect(() => {
+    gsap.from(textRef3.current, {
+      y: 50,          // start 50px below
+      opacity: 0,     // start invisible
+      duration: 1,    // animation duration
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: textRef3.current, // animate when this element is in view
+        start: "top 80%",         // trigger when top hits 80% of viewport
+        toggleActions: "play none none none",
+      },
+    });
+  }, []);
+
+
+
 
 
 
@@ -130,7 +162,7 @@ const Skills = () => {
     </div>
 
     {/* Frameworks/Libraries */}
-    <div ref={textRef} className="mb-10 relative">
+    <div ref={textRef2} className="mb-10 relative">
       <h1 className="text-xl sm:text-2xl font-bold  sm:text-left">
         Frameworks & libraries
       </h1>
@@ -156,7 +188,7 @@ const Skills = () => {
     </div>
 
     {/* Tools */}
-    <div ref={textRef} className="mb-10 relative">
+    <div ref={textRef3} className="mb-10 relative">
       <h1 className="text-xl sm:text-2xl font-bold sm:text-left">
         Tools & Technologies
       </h1>
