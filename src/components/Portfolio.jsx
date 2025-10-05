@@ -220,7 +220,7 @@ const textRef3 = useRef(null);
               deletingSpeed={60}
               pause={3000}
               startDelay={3000}
-              className="title text-6xl sm:text-7xl md:text-8xl lg:text-[120px] xl:text-[180px]  text-white"
+              className="title text-[55px] sm:text-7xl md:text-8xl lg:text-[120px] xl:text-[180px]  text-white"
             />
           </h1>
           <h1 className="title2 text-6xl sm:text-7xl md:text-8xl lg:text-[120px] xl:text-[180px]  text-white mt-1">
