@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-
 /* Optional: Hide scrollbar if needed */
 ::-webkit-scrollbar {
   display: none;
@@ -68,17 +67,15 @@
   font-family: sans-serif;
 }
 .name{
-  /* font-family:'Times New Roman', Times, serif; */
-    font-family: "Fira code", sans-serif;
-
+  font-family: "Fira code", sans-serif;
 
   text-align: left;
   font-weight: 600;
-  /* background: linear-gradient(to bottom, #ffffff, #d0cfcf, #171717);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
+.subText{
+  font-family: "Fira code", sans-serif;
+}
 
 .latest{
     font-family: "Open Sans", sans-serif;

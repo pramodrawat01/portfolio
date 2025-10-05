@@ -138,7 +138,7 @@ const Skills = () => {
     {/* Programming Languages */}
     <div ref={textRef} className="mb-10 relative">
       <h1
-        className="text-xl sm:text-2xl font-bold sm:text-left">
+        className="text-xl sm:text-2xl lg:text-3xl font-bold sm:text-left">
         Programming Languages
       </h1>
       <div className="flex flex-col sm:flex-row sm:justify-between border-l-1 gap-y-10 py-10 rounded-bl-[100px]">
@@ -163,7 +163,7 @@ const Skills = () => {
 
     {/* Frameworks/Libraries */}
     <div ref={textRef2} className="mb-10 relative">
-      <h1 className="text-xl sm:text-2xl font-bold  sm:text-left">
+      <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold  sm:text-left">
         Frameworks & libraries
       </h1>
       <div className="flex flex-col sm:flex-row sm:justify-between border-l-1 border-b-1 gap-y-10 py-10 rounded-bl-[100px]">
@@ -181,7 +181,7 @@ const Skills = () => {
         {/* text */}
         <div className="mt-6 sm:mt-[100px] text-center sm:text-right text-sm sm:text-base px-4 sm:px-0">
           <div className="w-full">○ I build modern and scalable UIs using React and Tailwind CSS</div>
-          <div className="w-full">○ I work with Next.js to create fast, optimized, and SEO-friendly web applications</div>
+          <div className="w-full">○ I work with React.js to create fast, optimized, and SEO-friendly web applications</div>
 
         </div>
       </div>
@@ -189,7 +189,7 @@ const Skills = () => {
 
     {/* Tools */}
     <div ref={textRef3} className="mb-10 relative">
-      <h1 className="text-xl sm:text-2xl font-bold sm:text-left">
+      <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold sm:text-left">
         Tools & Technologies
       </h1>
       <div className="flex flex-col sm:flex-row sm:justify-between border-l-1 gap-y-10 py-10 rounded-bl-[100px]">
