@@ -25,7 +25,7 @@ const Navbar = ({scrollToProjects}) => {
           <Link to="/">pramod.rawat.</Link>
         </h1>
 
-        <ul className="flex space-x-6 text-sm md:text-base font-medium">
+        <ul className="flex  space-x-6 text-sm md:text-base font-medium">
           <li className="nav-item subText cursor-pointer hover:text-[#55d63b]" onClick={scrollToProjects}>
             Projects
           </li>
@@ -38,9 +38,16 @@ const Navbar = ({scrollToProjects}) => {
           <li className="nav-item hover:text-[#55d63b]">
             <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="subText">X</a>
           </li>
-          <li className="nav-item  border-1 px-4 rounded-lg border-[#55d63b]">
-            <a href="resume.pdf" download={true} className="flex items-center gap-2 subText"><FaDownload/> Resume</a>
+          <li className="nav-item hidden sm:block border px-4 rounded-lg border-[#55d63b]">
+            <a
+              href="resume.pdf"
+              download={true}
+              className="flex items-center gap-2 subText"
+            >
+              <FaDownload /> Resume
+            </a>
           </li>
+
         </ul>
       </div>
     </nav>

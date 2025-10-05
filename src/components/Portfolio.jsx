@@ -304,7 +304,7 @@ const textRef3 = useRef(null);
                 </div>
               </div>
 
-              <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm sm:text-base md:text-md">
+              <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm  sm:text-base md:text-md">
                 Project-driven SaaS for aspiring developers to build, showcase, and collaborate. Features profile creation, team discovery, and project showcase. Built with React, Tailwind CSS, Node.js.
 
                 
@@ -661,10 +661,10 @@ const textRef3 = useRef(null);
 
           {/* Heading */}
           <div ref={textRef2} className="">
-            <h2 className="text-5xl sm:text-6xl md:text-[100px] font-bold text-[#121212] dark:text-[#ffffff] leading-none latest md:text-left">
+            <h2 className="text-5xl sm:text-6xl md:text-[100px] font-bold text-[#ffffff] leading-none latest md:text-left">
               why
             </h2>
-            <h2 className="text-5xl sm:text-6xl md:text-[90px] font-bold text-[#121212] dark:text-[#a5a5a5] leading-none latest  md:text-left">
+            <h2 className="text-5xl sm:text-6xl md:text-[90px] font-bold text-[#a5a5a5] leading-none latest  md:text-left">
               consider me?
             </h2>
           </div>
@@ -672,7 +672,7 @@ const textRef3 = useRef(null);
           {/* Paragraphs */}
           <div
             ref={textRef3}
-            className="text-base sm:text-lg md:text-xl text-[#3d3d3d] dark:text-[#ffffff] flex flex-col gap-2 mt-6 sm:mt-[40px] md:mt-[80px] px-4 sm:px-10 md:px-2 xl:pl-[400px] text-left"
+            className="text-sm  sm:text-base  md:text-xl  text-[#ffffff] flex flex-col gap-2 mt-6 sm:mt-[40px] md:mt-[80px] px-4 sm:px-10 md:px-2 xl:pl-[400px] text-left"
           >
             <p>○ I bring a strong mix of technical expertise, creativity, and a problem-solving mindset.</p>
             <p>○ I believe in putting genuine effort into my work rather than just creating noise.</p>
@@ -684,82 +684,57 @@ const textRef3 = useRef(null);
 
           {/* Carousel Container */}
           <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden mt-[60px] sm:mt-[80px] md:mt-[100px] px-4 sm:px-6 md:px-0">
-            {/* Left & Right Fades */}
-            <div className="pointer-events-none absolute left-0 top-0 h-full w-16 sm:w-24 md:w-32 bg-gradient-to-r from-[#0a0a0a] via-black/70 to-transparent z-20"></div>
-            <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 md:w-32 bg-gradient-to-l from-[#0a0a0a] via-black/70 to-transparent z-20"></div>
+  {/* Left & Right Gradients */}
+  <div className="pointer-events-none absolute left-0 top-0 h-full w-10 sm:w-20 bg-gradient-to-r from-[#0a0a0a] to-transparent z-20"></div>
+  <div className="pointer-events-none absolute right-0 top-0 h-full w-10 sm:w-20 bg-gradient-to-l from-[#0a0a0a] to-transparent z-20"></div>
 
-            {/* Scrolling Wrapper */}
-            <div className="flex gap-4 sm:gap-6 animate-scroll">
-              {[...Array(2)].map((_, loopIndex) => (
-                <div key={loopIndex} className="flex gap-4 sm:gap-6">
-                  {/* Card 1 */}
-                  <div className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] p-4 sm:p-6 bg-white dark:bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#121212] dark:text-[#f5f5f5] mb-2">
-                      ⚡ Strong Frontend Skills
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#3d3d3d] dark:text-[#a6a6a6]">
-                      Proficient in React.js, JavaScript, Tailwind CSS, and
-                      responsive design.
-                    </p>
-                  </div>
-
-                  {/* Card 2 */}
-                  <div className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] p-4 sm:p-6 bg-white dark:bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#121212] dark:text-[#f5f5f5] mb-2">
-                      🛠 Full-Stack Mindset
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#3d3d3d] dark:text-[#a6a6a6]">
-                      Currently mastering the MERN stack to build end-to-end
-                      applications.
-                    </p>
-                  </div>
-
-                  {/* Card 3 */}
-                  <div className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] p-4 sm:p-6 bg-white dark:bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#121212] dark:text-[#f5f5f5] mb-2">
-                      💡 Problem Solver
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#3d3d3d] dark:text-[#a6a6a6]">
-                      Write clean, efficient code and tackle challenges with
-                      logical solutions.
-                    </p>
-                  </div>
-
-                  {/* Card 4 */}
-                  <div className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] p-4 sm:p-6 bg-white dark:bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#121212] dark:text-[#f5f5f5] mb-2">
-                      🤝 Team Collaboration
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#3d3d3d] dark:text-[#a6a6a6]">
-                      Skilled with Git/GitHub, work well in teams, and
-                      communicate effectively.
-                    </p>
-                  </div>
-
-                  {/* Card 5 */}
-                  <div className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] p-4 sm:p-6 bg-white dark:bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#121212] dark:text-[#f5f5f5] mb-2">
-                      🎨 Creative & Detail-Oriented
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#3d3d3d] dark:text-[#a6a6a6]">
-                      Focus on delivering beautiful UI/UX with attention to
-                      design details.
-                    </p>
-                  </div>
-
-                  {/* Card 6 */}
-                  <div className="min-w-[250px] sm:min-w-[280px] md:min-w-[300px] p-4 sm:p-6 bg-white dark:bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#121212] dark:text-[#f5f5f5] mb-2">
-                      🚀 Growth-Oriented
-                    </h3>
-                    <p className="text-sm sm:text-base text-[#3d3d3d] dark:text-[#a6a6a6]">
-                      Quick learner, adaptable, and always upgrading my skills.
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+  {/* Scrolling Container */}
+  <div className="flex w-max animate-scroll gap-4 sm:gap-6">
+    {[...Array(2)].map((_, i) => (
+      <div key={i} className="flex gap-4 sm:gap-6">
+        {[
+          {
+            title: "⚡ Strong Frontend Skills",
+            text: "Proficient in React.js, JavaScript, Tailwind CSS, and responsive design.",
+          },
+          {
+            title: "🛠 Full-Stack Mindset",
+            text: "Currently mastering the MERN stack to build end-to-end applications.",
+          },
+          {
+            title: "💡 Problem Solver",
+            text: "Write clean, efficient code and tackle challenges with logical solutions.",
+          },
+          {
+            title: "🤝 Team Collaboration",
+            text: "Skilled with Git/GitHub, work well in teams, and communicate effectively.",
+          },
+          {
+            title: "🎨 Creative & Detail-Oriented",
+            text: "Focus on delivering beautiful UI/UX with attention to design details.",
+          },
+          {
+            title: "🚀 Growth-Oriented",
+            text: "Quick learner, adaptable, and always upgrading my skills.",
+          },
+        ].map((card, idx) => (
+          <div
+            key={idx}
+            className="min-w-[220px] sm:min-w-[260px] md:min-w-[280px] lg:min-w-[300px] bg-[#1c1c1c] rounded-2xl shadow hover:shadow-lg transition p-4 sm:p-5 md:p-6"
+          >
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#f5f5f5] mb-2">
+              {card.title}
+            </h3>
+            <p className="text-xs sm:text-sm md:text-base text-[#a6a6a6]">
+              {card.text}
+            </p>
           </div>
+        ))}
+      </div>
+    ))}
+  </div>
+</div>
+
         </section>
 
         {/*profile image section*/}
@@ -767,7 +742,7 @@ const textRef3 = useRef(null);
           <img
             src={portfolioImg}
             alt="portfolio image"
-            className="w-[300px] h-[300px] object-cover object-[50%_20%]  rounded-full shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)]"
+            className="w-[210px] h-[210px] sm:w-[300px] sm:h-[300px] object-cover object-[50%_20%]  rounded-full shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)]"
           />
         </div>
 
