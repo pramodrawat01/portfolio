@@ -307,7 +307,7 @@ const textRef3 = useRef(null);
               <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm sm:text-base md:text-md">
                 Project-driven SaaS for aspiring developers to build, showcase, and collaborate. Features profile creation, team discovery, and project showcase. Built with React, Tailwind CSS, Node.js.
 
-                
+
               </div>
             </div>
 
