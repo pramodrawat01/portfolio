@@ -243,7 +243,7 @@ const textRef3 = useRef(null);
             </div>
             <div className="text-center md:text-right">
             <a
-              href="/resume.pdf"
+              href="/Resume_pramod_rawat.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -296,7 +296,7 @@ const textRef3 = useRef(null);
                 </div>
                 <div className="flex gap-3 items-center ">
                   <a  className="">
-                    <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p>
+                    {/* <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p> */}
                   </a>
                   <a href="https://github.com/pramodrawat01/peerShape" target="_blank">
                     <FaGithub className="text-3xl text-[#55d63b] "/>
@@ -327,14 +327,14 @@ const textRef3 = useRef(null);
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold">
                   MinaKriti
                 </div>
-                <div className="flex gap-3 items-center ">
+                {/* <div className="flex gap-3 items-center ">
                   <a  className="">
                     <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p>
                   </a>
                   <a href="" target="_blank">
                     <FaGithub className="text-3xl text-[#55d63b] "/>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm sm:text-base md:text-md">
                 Full-stack MERN e-commerce platform for handcrafted art & craft products. Features product listing, cart, checkout, and user authentication. Built with MongoDB, Express, React, Node.js, and Tailwind CSS.
@@ -823,7 +823,7 @@ const textRef3 = useRef(null);
                   <div className="pt-[20px]">
                     <a href="mailto:rawatpramod392@gmail.com">
                       <p className="text-[#55d63b] text-lg sm:text-3xl underline cursor-pointer break-words">
-                        rawatpramod@392.com
+                        rawatpramod392@gmail.com
                       </p>
                     </a>
                     
