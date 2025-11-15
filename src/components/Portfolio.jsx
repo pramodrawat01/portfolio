@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Skills from "./Skills";
 
-import img from "../assets/project2.png";
+import img from "../assets/jobSpot.png";
 import img1 from "../assets/project1.png";
 import img2 from "../assets/flipcoin.png";
 import cinemaGhar from '../assets/cinemaghar.png';
@@ -32,7 +32,7 @@ import { FaFilePdf } from "react-icons/fa";
 
 
 
-import pro1 from "../assets/peershape.png";
+import pro1 from "../assets/jobSpot.png";
 
 import Typewriter from "./Typewriter";
 
@@ -251,7 +251,7 @@ const textRef3 = useRef(null);
                 type="submit"
                 className="px-6 w-full sm:w-[200px] py-3 rounded-lg bg-[#55d63b] text-black cursor-pointer transition-transform duration-150 ease-in-out font-semibold active:scale-95"
               >
-                view Resume
+                View Resume
               </button>
             </a>
               
@@ -273,7 +273,7 @@ const textRef3 = useRef(null);
               ref={textRef}
               className="text-5xl sm:text-6xl md:text-[100px] leading-none latest  md:text-left"
             >
-              Latest projects
+              Latest Projects
             </div>
 
             {/*project 01 */}
@@ -285,27 +285,28 @@ const textRef3 = useRef(null);
             >
               <div className="absolute top-[-10px] right-[-20px] border-1 px-2 rounded-sm text-[#55d63b] bg-[#181818]">in progress</div>
               <div
-              onClick={() => setSelectedProject("peerShape")}
+              onClick={() => setSelectedProject("JobSpot")}
                className="h-[200px] sm:h-[230px] w-full rounded-2xl overflow-hidden hover:scale-99 transition duration-300 cursor-pointer">
                 <img src={img} className="w-full h-full object-contain hover:grayscale-100" />
               </div>
 
               <div className="flex mt-3 justify-between">
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  peerShape
+                  JobSpot
                 </div>
                 <div className="flex gap-3 items-center ">
                   <a  className="">
                     {/* <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p> */}
                   </a>
-                  <a href="https://github.com/pramodrawat01/peerShape" target="_blank">
+                  <a href="https://github.com/pramodrawat01/job-portal" target="_blank">
                     <FaGithub className="text-3xl text-[#55d63b] "/>
                   </a>
                 </div>
               </div>
 
               <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm  sm:text-base md:text-md">
-                Project-driven SaaS for aspiring developers to build, showcase, and collaborate. Features profile creation, team discovery, and project showcase. Built with React, Tailwind CSS, Node.js.
+                A job portal with authentication, profile management, and skill-based job recommendations.
+                Implemented real-time search, filtering, and job bookmarking features using Redux Toolkit and MongoDB
 
                 
               </div>
@@ -325,7 +326,7 @@ const textRef3 = useRef(null);
 
               <div className="flex mt-3 justify-between">
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  MinaKriti
+                  UrbanHood
                 </div>
                 {/* <div className="flex gap-3 items-center ">
                   <a  className="">
@@ -348,11 +349,11 @@ const textRef3 = useRef(null);
                 <div className="bg-[#18181B] rounded-2xl mt-[30px] mx-4 sm:mx-[100px] p-6 w-full sm:w-[1000px] max-h-[90vh] overflow-y-auto shadow-lg relative">
                   
 
-                  {selectedProject === "peerShape" && (
+                  {selectedProject === "JobSpot" && (
                     <>
                       <div className="flex justify-between items-center mb-4">
                          <h2 className="text-xl sm:text-2xl font-bold ">
-                          peerShape
+                          JobSpot
                         </h2>
                         <button
                           onClick={() => setSelectedProject(null)}
@@ -369,7 +370,7 @@ const textRef3 = useRef(null);
                         About this project
                       </h3>
                       <p className="text-gray-300 text-sm sm:text-lg mb-4 mt-4">
-                        A project-driven SaaS platform built for aspiring developers to build, perform, showcase, win, and increase their chances of getting hired. Developed using React, Tailwind CSS, and Node.js, it allows users to create profiles, find teammates for projects or hackathons, and showcase their work in a collaborative environment. Deployed on Vercel.
+                        A job portal with authentication, profile management, and skill-based job recommendations. Implemented real-time search, filtering, and job bookmarking features using Redux Toolkit and MongoDB
                       </p>
                     </>
                   )}
@@ -378,7 +379,7 @@ const textRef3 = useRef(null);
                     <>
                       <div className="flex justify-between items-center mb-4">
                          <h2 className="text-xl sm:text-2xl font-bold ">
-                          MinaKriti
+                          UrbanHood
                         </h2>
                         <button
                           onClick={() => setSelectedProject(null)}
@@ -494,7 +495,7 @@ const textRef3 = useRef(null);
                       {/* Project Title */}
                       <div className="flex justify-between items-center mb-4">
                          <h2 className="text-xl sm:text-2xl font-bold ">
-                          cinemaGhar
+                          CinemaGhar
                         </h2>
                         <button
                           onClick={() => setSelectedProject(null)}
@@ -608,7 +609,7 @@ const textRef3 = useRef(null);
 
                <div className="flex mt-3 justify-between">
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  cinemaGhar
+                  CinemaGhar
                 </div>
                 <div className="flex gap-3 items-center ">
                   <a href="https://cinema-ghar-ebon.vercel.app" target="_blank"  className="">

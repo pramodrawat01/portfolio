@@ -29,29 +29,29 @@ const Skills = () => {
 
   const farameworks = [
     {name : "React ", icon : <SiReact className="w-8 h-8 text-cyan-500 mb-2" />},
-    {name :"Bootstrap", icon : <SiBootstrap className="w-8 h-8 text-purple-600 mb-2" />},
+    // {name :"Bootstrap", icon : <SiBootstrap className="w-8 h-8 text-purple-600 mb-2" />},
     {name : "Tailwind css", icon : <SiTailwindcss className="w-8 h-8 text-sky-400 mb-2" />},
-    {name : "Next.js (learning)", icon : <SiNextdotjs className="w-8 h-8 text-white mb-2 " />},
+    // {name : "Next.js (learning)", icon : <SiNextdotjs className="w-8 h-8 text-white mb-2 " />},
   ]
 
   const Languages = [
     
     {
-      name : "javascript",
+      name : "Javascript",
       icon : <SiJavascript className="w-8 h-8 text-yellow-500 mb-2" />
     },
     {
-      name : "C++",
+      name : "C++ (Learning)",
       icon :  <SiCplusplus className="w-8 h-8 text-blue-600 mb-2" />
     },
-    {
-      name : "C",
-      icon : <SiC className="w-8 h-8 white mb-2" />
-    },
-    {
-      name : "Typescript (learning)",
-      icon : <SiTypescript className="w-8 h-8 text-blue-500 mb-2" />
-    },
+    // {
+    //   name : "C",
+    //   icon : <SiC className="w-8 h-8 white mb-2" />
+    // },
+    // {
+    //   name : "Typescript (learning)",
+    //   icon : <SiTypescript className="w-8 h-8 text-blue-500 mb-2" />
+    // },
   ]
 
   const Tools = [
@@ -155,8 +155,8 @@ const Skills = () => {
 
         {/* text */}
         <div className="mt-6 sm:mt-[100px] text-center sm:text-right text-sm sm:text-base px-4 sm:px-0">
-          <div className="w-full">○ solving DSA questions in c++ on platforms like leetcode and codeforces</div>
-          <div className="w-full">○ i harness the power of JavaScript to build interactive, scalable, and user-friendly web experiences.</div>
+          {/* <div className="w-full">○ solving DSA questions in c++ on platforms like leetcode and codeforces</div> */}
+          <div className="w-full">○ I harness the power of JavaScript to build interactive, scalable, and user-friendly web experiences.</div>
         </div>
       </div>
     </div>
@@ -164,7 +164,7 @@ const Skills = () => {
     {/* Frameworks/Libraries */}
     <div ref={textRef2} className="mb-10 relative">
       <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold  sm:text-left">
-        Frameworks & libraries
+        Frameworks & Libraries
       </h1>
       <div className="flex flex-col sm:flex-row sm:justify-between border-l-1 border-b-1 gap-y-10 py-10 rounded-bl-[100px]">
         
