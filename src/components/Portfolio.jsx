@@ -1,15 +1,15 @@
 import Navbar from "./Navbar";
 import Skills from "./Skills";
 
-import img from "../assets/jobSpot.png";
+import img from "../assets/100xportal.png";
 import img1 from "../assets/project1.png";
-import img2 from "../assets/flipcoin.png";
+import img2 from "../assets/snapdoor.png";
 import cinemaGhar from '../assets/cinemaghar.png';
 
 import cinemaGharVid from '../assets/cinemaghar.mp4'
 import ProjectVideo from '../components/ProjectVideo.jsx'
 
-import flipcoinVid from '../assets/flipcoinVid.mp4'
+import snapdoorVid from '../assets/snapdoorVid.mp4'
 
 import bottomPro1 from "../assets/project1.png";
 import bottomPro2 from "../assets/project2.png";
@@ -26,13 +26,12 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsSendFill } from "react-icons/bs";
 import { FaReact, FaJs } from "react-icons/fa";
-import { SiTailwindcss, SiAxios } from "react-icons/si";
+import { SiTailwindcss, SiAxios, SiMongodb } from "react-icons/si";
 import { RiCodeSSlashLine } from "react-icons/ri";
-import { FaFilePdf } from "react-icons/fa";
+import { FaFilePdf ,FaShoppingCart, FaSearch, FaUserShield, FaBoxOpen, FaTachometerAlt,FaNodeJs } from "react-icons/fa";
 
 
-
-import pro1 from "../assets/jobSpot.png";
+import pro1 from "../assets/100xportal.png";
 
 import Typewriter from "./Typewriter";
 
@@ -243,7 +242,7 @@ const textRef3 = useRef(null);
             </div>
             <div className="text-center md:text-right">
             <a
-              href="/Resume_pramod_rawat.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -285,14 +284,14 @@ const textRef3 = useRef(null);
             >
               <div className="absolute top-[-10px] right-[-20px] border-1 px-2 rounded-sm text-[#55d63b] bg-[#181818]">in progress</div>
               <div
-              onClick={() => setSelectedProject("JobSpot")}
+              onClick={() => setSelectedProject("100xPortal")}
                className="h-[200px] sm:h-[230px] w-full rounded-2xl overflow-hidden hover:scale-99 transition duration-300 cursor-pointer">
                 <img src={img} className="w-full h-full object-contain hover:grayscale-100" />
               </div>
 
               <div className="flex mt-3 justify-between">
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  JobSpot
+                  100xPortal
                 </div>
                 <div className="flex gap-3 items-center ">
                   <a  className="">
@@ -312,35 +311,7 @@ const textRef3 = useRef(null);
               </div>
             </div>
 
-            {/* project 02 */}
-            <div
-              ref={project03}
-              className="border border-[#4a4a4a] w-full sm:w-[400px] p-4 px-1 rounded-2xl mt-10 sm:mt-[150px] hover:shadow-lg transition group self-center relative"
-            >
-              <div className="absolute top-[-10px] right-[-20px] border-1 px-2 rounded-sm text-[#55d63b] bg-[#181818]">in progress</div>
-              <div
-              onClick={() => setSelectedProject("minakriti")}
-               className="h-[200px] sm:h-[230px] w-full rounded-2xl overflow-hidden hover:scale-99 transition duration-300 cursor-pointer">
-                <img src={img1} className="w-full h-full object-contain hover:grayscale-100" />
-              </div>
-
-              <div className="flex mt-3 justify-between">
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  UrbanHood
-                </div>
-                {/* <div className="flex gap-3 items-center ">
-                  <a  className="">
-                    <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p>
-                  </a>
-                  <a href="" target="_blank">
-                    <FaGithub className="text-3xl text-[#55d63b] "/>
-                  </a>
-                </div> */}
-              </div>
-              <div className="project-description px-4 mt-4 text-[#c1bfbf] text-sm sm:text-base md:text-md">
-                Full-stack MERN e-commerce platform for handcrafted art & craft products. Features product listing, cart, checkout, and user authentication. Built with MongoDB, Express, React, Node.js, and Tailwind CSS.
-              </div>
-            </div>
+            
 
             {/* Overlay stays same */}
 
@@ -349,11 +320,11 @@ const textRef3 = useRef(null);
                 <div className="bg-[#18181B] rounded-2xl mt-[30px] mx-4 sm:mx-[100px] p-6 w-full sm:w-[1000px] max-h-[90vh] overflow-y-auto shadow-lg relative">
                   
 
-                  {selectedProject === "JobSpot" && (
+                  {selectedProject === "100xPortal" && (
                     <>
                       <div className="flex justify-between items-center mb-4">
                          <h2 className="text-xl sm:text-2xl font-bold ">
-                          JobSpot
+                          100xPortal
                         </h2>
                         <button
                           onClick={() => setSelectedProject(null)}
@@ -375,40 +346,16 @@ const textRef3 = useRef(null);
                     </>
                   )}
 
-                  {selectedProject === "minakriti" && (
-                    <>
-                      <div className="flex justify-between items-center mb-4">
-                         <h2 className="text-xl sm:text-2xl font-bold ">
-                          UrbanHood
-                        </h2>
-                        <button
-                          onClick={() => setSelectedProject(null)}
-                          className=" text-white border-[#55d63b] hover:text-green cursor-pointer border p-2 rounded-xl"
-                        > 
-                          go back
-                        </button>
-                      </div>
-                      <img
-                        src={img1}
-                        className="w-full h-[250px] sm:h-[550px] object-cover rounded-lg mb-4"
-                      />
-                      <h3 className="text-2xl sm:text-3xl font-bold mt-8">
-                        About this project
-                      </h3>
-                      <p className="text-gray-300 text-sm sm:text-lg mb-4 mt-4">
-                        Full-stack MERN e-commerce platform for handcrafted art & craft products. Features product listing, cart, checkout, and user authentication. Built with MongoDB, Express, React, Node.js, and Tailwind CSS.
-                      </p>
-                    </>
-                  )}
+            
 
-                  {selectedProject === "flipcoin" && (
+                  {selectedProject === "snapdoor" && (
                     
 
                     <>
                       {/* Project Title */}
                       <div className="flex justify-between items-center mb-4">
                          <h2 className="text-xl sm:text-2xl font-bold ">
-                          flipCoin
+                          SnapDoor — Grocery Delivery Platform
                         </h2>
                         <button
                           onClick={() => setSelectedProject(null)}
@@ -422,21 +369,51 @@ const textRef3 = useRef(null);
                       
                       <ProjectVideo
                       thumbnail={img2}
-                      videoSrc={flipcoinVid}
+                      videoSrc={snapdoorVid}
                       />
 
-                      {/* One-line Description */}
-                     <p className="text-gray-300 text-base sm:text-lg mb-4">
-                        A personal finance tracker where users can record their daily expenses, track spending habits, and visualize their financial data easily.
-                      </p>
 
+                      {/* One-line Description */}
+                     <p className="text-gray-300 text-base sm:text-lg mb-4 pt-4">
+                      A modern grocery delivery web application designed to make everyday shopping fast, simple, and convenient. Users can browse fresh groceries, explore categories and deals, search for products, add items to their cart, and place orders through a clean and responsive interface.                      </p>
+
+  <h3 className="text-xl sm:text-2xl font-bold mb-4">Key Features</h3>
+                                            <div className="flex flex-wrap gap-6 items-center text-gray-300 text-lg mb-8">
+                                              <div className="flex items-center gap-2">
+                        <FaShoppingCart className="text-blue-400 text-3xl" />
+                        <span>Product browsing and shopping cart</span>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <FaSearch className="text-cyan-400 text-3xl" />
+                        <span>Product search</span>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <FaUserShield className="text-purple-400 text-3xl" />
+                        <span>User authentication</span>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <FaBoxOpen className="text-orange-400 text-3xl" />
+                        <span>Order management</span>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <FaTachometerAlt className="text-emerald-400 text-3xl" />
+                        <span>Admin Dashboard</span>
+                      </div>
+                    </div>
                       {/* About Project Section */}
                       <h3 className="text-xl sm:text-2xl font-bold mt-8 mb-2">About this Project</h3>
                       <p className="text-gray-300 text-sm sm:text-lg mb-6">
-                        FlipCoin is a modern expense tracking web app designed to help users manage their finances efficiently. 
-                        It allows users to add, edit, and delete transactions, categorize expenses, and get insights into their monthly spending. 
-                        The app features dynamic charts, smooth UI interactions, and responsive design to make expense tracking effortless and visually appealing.
+                        SnapDoor is a grocery delivery platform inspired by modern quick-commerce applications. The application provides users with a smooth shopping experience where they can discover farm-fresh products, browse different grocery categories, search for items, view product details, manage their cart, and proceed with their orders.
                       </p>
+                      <p className="text-gray-300 text-sm sm:text-lg mb-6">The main focus of the project was to build a responsive and user-friendly shopping interface with reusable components, smooth navigation, and an organized product browsing experience.
+                      </p>
+
+                    
+
 
                       {/* Tech Stack Section */}
                       <h3 className="text-xl sm:text-2xl font-bold mb-2">Tech Stack</h3>
@@ -455,32 +432,39 @@ const textRef3 = useRef(null);
                         </div>
                         
                         <div className="flex items-center gap-2">
-                          <FaFilePdf className="text-red-600 text-3xl" />
-                          <span>JS pdf converter</span>
+                          <FaNodeJs className="text-green-300 text-3xl" />
+                          <span>Node.js</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <SiMongodb className="text-green-600 text-3xl" />
+                          <span>MongoDB</span>
                         </div>
                       </div>
 
+
+                     
                       {/* Learnings & Challenges */}
                       <h4 className="text-xl sm:text-2xl font-bold mb-2">Learnings & Challenges</h4>
                       <p className="text-gray-300 text-sm sm:text-lg mb-8">
-                        While building FlipCoin, I learned how to structure data efficiently and manage global states for transactions using React hooks. 
-                        I also deepened my understanding of CRUD operations and dynamic rendering based on user actions.  
-                        One major challenge was ensuring real-time UI updates after every transaction and keeping the app lightweight — 
-                        which I overcame by optimizing state management and minimizing re-renders through component memoization.
+                        While building SnapDoor, I improved my understanding of building a complete e-commerce workflow and structuring a React application into reusable components. I worked on product listing, search, cart management, routing, responsive UI, and handling user interactions.
                       </p>
+
+                                            <p className="text-gray-300 text-sm sm:text-lg mb-8">
+                                              One of the major challenges was maintaining a smooth shopping experience while managing different application states such as products, cart items, user authentication, and orders. Building the project helped me strengthen my understanding of React, API integration, component architecture, and full-stack application development.
+                                            </p>
 
 
                       {/* Buttons */}
                       <div className="flex gap-4">
                         <a
-                          href="https://use-buddy.vercel.app"
+                          href="https://snapdoor-one.vercel.app/"
                           target="_blank"
                           className="bg-[#55d63b] border-2 hover:text-[#fff] hover:bg-transparent hover:border-2 hover:border-[#55d63b] text-black px-5 py-2 rounded-lg transition"
                         >
                           Live Demo
                         </a>
                         <a
-                          href="https://github.com/pramodrawat01/flip_coin"
+                          href="https://github.com/pramodrawat01/SnapDoor"
                           target="_blank"
                           className="border-2 border-[#55d63b] text-white px-5 py-2 rounded-lg transition hover:text-black hover:bg-[#55d63b] "
                         >
@@ -596,6 +580,34 @@ const textRef3 = useRef(null);
           {/* Right side */}
           <div className="w-full h-full flex flex-col items-end gap-10 sm:gap-[100px]">
 
+          {/* fourth project */}
+            <div
+              ref={project04}
+              className="border border-[#4a4a4a]  w-full sm:w-[400px] p-4 px-1 rounded-2xl mt-10 sm:mt-[150px] hover:shadow-lg  transition group self-center"
+            >
+              <div
+              onClick={() => setSelectedProject("snapdoor")}
+               className="h-[200px] sm:h-[230px] w-full rounded-2xl overflow-hidden hover:scale-99 transition duration-300 cursor-pointer">
+                <img src={img2} className="w-full h-full object-contain hover:grayscale-100" />
+              </div>
+              <div className="flex mt-3 justify-between">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold">
+                 SnapDoor
+                </div>
+                <div className="flex gap-3 items-center ">
+
+                  <a href="https://snapdoor-one.vercel.app/" target="_blank" className="">
+                    <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p>
+                  </a>
+                  <a href="https://github.com/pramodrawat01/SnapDoor" target="_blank">
+                    <FaGithub className="text-3xl text-[#55d63b] "/>
+                  </a>
+                </div>
+              </div>
+              <div className="project-description text-[#c1bfbf] text-sm sm:text-base md:text-md px-4 mt-4">
+A full-stack grocery delivery platform built with React, Tailwind CSS, Node.js, and MongoDB. Users can browse groceries, search products, explore deals, manage their cart, and place orders with ease.              </div>
+            </div>
+            
             {/* project 3 */}
             <div
               ref={project02}
@@ -626,35 +638,8 @@ const textRef3 = useRef(null);
               </div>
             </div>
             
-            {/* fourth project */}
-            <div
-              ref={project04}
-              className="border border-[#4a4a4a]  w-full sm:w-[400px] p-4 px-1 rounded-2xl mt-10 sm:mt-[150px] hover:shadow-lg  transition group self-center"
-            >
-              <div
-              onClick={() => setSelectedProject("flipcoin")}
-               className="h-[200px] sm:h-[230px] w-full rounded-2xl overflow-hidden hover:scale-99 transition duration-300 cursor-pointer">
-                <img src={img2} className="w-full h-full object-contain hover:grayscale-100" />
-              </div>
-              <div className="flex mt-3 justify-between">
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  flip coin
-                </div>
-                <div className="flex gap-3 items-center ">
-
-                  <a href="https://use-buddy.vercel.app" target="_blank" className="">
-                    <p className="border-1 border-[#55d63b] rounded-md px-2 py-0">LIVE</p>
-                  </a>
-                  <a href="https://github.com/pramodrawat01/flip_coin" target="_blank">
-                    <FaGithub className="text-3xl text-[#55d63b] "/>
-                  </a>
-                </div>
-              </div>
-              <div className="project-description text-[#c1bfbf] text-sm sm:text-base md:text-md px-4 mt-4">
-               An expense management web app built with React, Tailwind CSS, and local storage integration. It helps users track their daily expenses, categorize spending, and visualize transactions in a simple and intuitive interface. Deployed on Vercel.
-              </div>
             </div>
-            </div>
+            
           </div>
 
         {/* about  */}
@@ -678,7 +663,6 @@ const textRef3 = useRef(null);
             <p>○ I bring a strong mix of technical expertise, creativity, and a problem-solving mindset.</p>
             <p>○ I believe in putting genuine effort into my work rather than just creating noise.</p>
             <p>○ I have been consistently working on multiple projects over the past few months to sharpen my skills.</p>
-            <p>○ I maintain a DSA streak not for show, but to build a deeper understanding of algorithms.</p>
             <p>○ I strive to become a better problem-solver with every step of improvement I take.</p>
 
           </div>
